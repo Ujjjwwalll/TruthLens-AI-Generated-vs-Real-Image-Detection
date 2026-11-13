@@ -123,13 +123,7 @@ Evaluated on the 20,000-image CIFAKE test set.
 5. The app shows the predicted class, a confidence score and probability bars.
 
 No division by 255 is done in the app, because the `Rescaling` layer is already inside the model.
-
-## 📸 Screenshots
-
-> Add your screenshots here, for example:
->
-> `![App screenshot](screenshots/app.png)`
-> `![Confusion matrix](screenshots/confusion_matrix.png)`
+A Deep Learning-based image classifier that detects whether an image is a **real photograph** or **AI-generated**, built with Convolutional Neural Networks (CNN), TensorFlow/Keras and Streamlit. Users upload an image and get a real-time prediction with a confidence score.
 
 ## ⚠️ Limitations
 
@@ -160,20 +154,8 @@ TruthLens/
 ├── app.py                         # Streamlit application
 ├── truthlens_model.keras          # Model 1 (baseline)
 ├── truthlens_model_v2.keras       # Model 2 (used by app.py)
-├── requirements.txt
-├── .gitignore
 └── README.md
 ```
-
-## ▶️ How to Run
-
-```bash
-git clone https://github.com/YOUR_USERNAME/TruthLens.git
-cd TruthLens
-pip install -r requirements.txt     # Python 3.10 or 3.11 recommended
-streamlit run app.py
-```
-
 The app opens at `http://localhost:8501`.
 
 To retrain, download CIFAKE, place `train/` and `test/` in the project root and run the notebook. Training Model 2 took about 91 minutes on a laptop CPU.
@@ -187,9 +169,6 @@ To retrain, download CIFAKE, place `train/` and `test/` in the project root and 
 - Understanding dataset bias: high test accuracy does not guarantee real-world performance.
 - Deploying a Keras model in Streamlit.
 
-## 🙏 Acknowledgements
-
-CIFAKE: Bird, J.J. and Lotfi, A. (2023). CIFAR-10: Krizhevsky, A. and Hinton, G.
 
 ## 👨‍💻 Author
 
